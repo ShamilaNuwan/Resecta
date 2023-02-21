@@ -14,7 +14,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Resecta Login")),
+      appBar: AppBar(title: const Text("Resecta")),
       body: ProgressOverlay(child: LoginPageForm()),
     );
   }
@@ -35,9 +35,18 @@ class LoginPageForm extends ConsumerWidget {
         children: [
           Expanded(
             child: ListView(
-              padding: const EdgeInsets.all(8),
+              padding: const EdgeInsets.fromLTRB(8, 0, 8, 0),
               children: [
                 Image.network(_loginImage),
+                const SizedBox(height: 8),
+                const Text(
+                  'Login',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25
+                  )
+                ),
+                const SizedBox(height: 8),
                 FormBuilderTextField(
                   name: 'email',
                   decoration: const InputDecoration(
@@ -66,7 +75,7 @@ class LoginPageForm extends ConsumerWidget {
               ],
             ),
           ),
-          const Divider(),
+          // const Divider(),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
@@ -74,11 +83,11 @@ class LoginPageForm extends ConsumerWidget {
               children: [
                 ElevatedButton(
                   onPressed: () => _handleSubmit(context, ref),
-                  child: const Text("Submit"),
+                  child: const Text("Login"),
                 ),
                 TextButton(
                   onPressed: () => _handleRegister(context),
-                  child: const Text("Don't have an account | Register in here"),
+                  child: const Text("Don't have an account? Register"),
                 ),
               ],
             ),
