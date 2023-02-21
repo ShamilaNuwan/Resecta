@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:z_collector_app/models/utils/reference.dart';
+import 'package:Resecta/models/utils/reference.dart';
 
 part 'project.g.dart';
 

@@ -7,7 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:shared_preferences_android/shared_preferences_android.dart';
 import 'package:uuid/uuid.dart';
 import 'package:workmanager/workmanager.dart';
-import 'package:z_collector_app/firebase_options.dart';
+import 'package:Resecta/firebase_options.dart';
 
 class UploadJob {
   final String id;

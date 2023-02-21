@@ -2,9 +2,9 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/views/helpers/snackbar_messages.dart';
-import 'package:z_collector_app/views/widgets/fields/base_field_utils.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/views/helpers/snackbar_messages.dart';
+import 'package:Resecta/views/widgets/fields/base_field_utils.dart';
 
 abstract class AbstractSeriesFieldWidget<T> extends StatefulWidget {
   final int index;

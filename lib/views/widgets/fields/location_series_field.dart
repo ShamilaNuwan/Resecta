@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/views/helpers/location_fetcher.dart';
-import 'package:z_collector_app/views/widgets/fields/abstract_series_field.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/views/helpers/location_fetcher.dart';
+import 'package:Resecta/views/widgets/fields/abstract_series_field.dart';
 
 class LocationSeriesFieldWidget extends AbstractSeriesFieldWidget<Position> {
   const LocationSeriesFieldWidget(

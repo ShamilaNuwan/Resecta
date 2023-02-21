@@ -1,4 +1,3 @@
-# z_collector_app
 
 A new Flutter project.
 

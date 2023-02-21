@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:z_collector_app/views/helpers/background_upload.dart';
+import 'package:Resecta/views/helpers/background_upload.dart';
 
 class UploadTaskList extends StatelessWidget {
   const UploadTaskList({Key? key}) : super(key: key);

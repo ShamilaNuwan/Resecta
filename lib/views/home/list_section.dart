@@ -1,9 +1,9 @@
 import 'package:beamer/beamer.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/views/helpers/firebase_builders.dart';
-import 'package:z_collector_app/views/projects/list_card.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/views/helpers/firebase_builders.dart';
+import 'package:Resecta/views/projects/list_card.dart';
 
 class HomeProjectListSection extends StatelessWidget {
   final String title;
@@ -51,7 +51,7 @@ class HomeProjectListSection extends StatelessWidget {
           isList: false,
           emptyWidget: const Padding(
             padding: EdgeInsets.all(8),
-            child: Text("Nothing to show."),
+            child: Text("No projects to show"),
           ),
           stream: query.limit(max).snapshots(),
           builder: (context, projectId, projectMap) {

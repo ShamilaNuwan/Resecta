@@ -1,9 +1,9 @@
 import 'package:beamer/beamer.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:z_collector_app/views/helpers/firebase_builders.dart';
-import 'package:z_collector_app/views/helpers/get_projects.dart';
-import 'package:z_collector_app/views/home/list_section.dart';
+import 'package:Resecta/views/helpers/firebase_builders.dart';
+import 'package:Resecta/views/helpers/get_projects.dart';
+import 'package:Resecta/views/home/list_section.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -12,18 +12,18 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Z- Collector"),
+        title: const Text("Resecta"),
       ),
       drawer: Drawer(
         shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.only(bottomRight: Radius.circular(20)),
+          borderRadius: BorderRadius.only(bottomRight: Radius.circular(10)),
         ),
         child: ListView(
           children: [
             DrawerHeader(
               child: Center(
                 child: Text(
-                  "Z-Collector",
+                  "Resecta",
                   style: Theme.of(context)
                       .textTheme
                       .headline4!
@@ -47,18 +47,18 @@ class HomePage extends StatelessWidget {
               onTap: () =>
                   Beamer.of(context).beamToNamed('/home/public-projects'),
             ),
-            const Divider(),
-            ListTile(
-              title: const Text("Create Project"),
-              trailing: const Icon(Icons.add),
-              onTap: () => Beamer.of(context).beamToNamed('/home/add-project'),
-            ),
-            const Divider(),
-            ListTile(
-              title: const Text("Record Assets"),
-              onTap: () =>
-                  Beamer.of(context).beamToNamed('/home/record-assets'),
-            ),
+            // const Divider(),
+            // ListTile(
+            //   title: const Text("Create Project"),
+            //   trailing: const Icon(Icons.add),
+            //   onTap: () => Beamer.of(context).beamToNamed('/home/add-project'),
+            // ),
+            // const Divider(),
+            // ListTile(
+            //   title: const Text("Record Assets"),
+            //   onTap: () =>
+            //       Beamer.of(context).beamToNamed('/home/record-assets'),
+            // ),
             const Divider(),
             ListTile(
               title: const Text("Logout"),
@@ -108,7 +108,7 @@ class HomePage extends StatelessWidget {
         onPressed: () {
           Beamer.of(context).beamToNamed('/home/add-project');
         },
-        label: const Text("Add Project"),
+        label: const Text("Create Project"),
         icon: const Icon(Icons.add),
       ),
     );

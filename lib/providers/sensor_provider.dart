@@ -1,9 +1,9 @@
 import 'package:flutter/services.dart';
-import 'package:z_collector_app/models/project.dart';
+import 'package:Resecta/models/project.dart';
 
 class SensorProvider {
   static const platform =
-      MethodChannel('com.example.z_collector_app/methodChannel');
+      MethodChannel('com.example.Resecta/methodChannel');
 
   static Future<MotionSensorData> getMotionSensorData() async {
     final values = await platform.invokeMethod('getMotionSensorValues');

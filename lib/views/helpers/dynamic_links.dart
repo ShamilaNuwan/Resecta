@@ -14,7 +14,7 @@ Future<Uri> getPrivateProjectDynamicLink(String projectId) async {
     ),
     // Android application details needed for opening correct app on device/Play Store
     androidParameters: const AndroidParameters(
-      packageName: "com.example.z_collector_app",
+      packageName: "com.example.Resecta",
       minimumVersion: 1,
     ),
   );

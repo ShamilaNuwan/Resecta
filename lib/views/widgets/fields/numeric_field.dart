@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/views/widgets/fields/abstract_field.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/views/widgets/fields/abstract_field.dart';
 
 class NumericFieldWidget extends AbstractFieldWidget {
   const NumericFieldWidget(

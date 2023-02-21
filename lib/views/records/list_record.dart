@@ -8,10 +8,10 @@ import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:timeago/timeago.dart' as timeago;
 import 'package:uuid/uuid.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/models/record.dart';
-import 'package:z_collector_app/models/user.dart';
-import 'package:z_collector_app/views/helpers/firebase_builders.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/models/record.dart';
+import 'package:Resecta/models/user.dart';
+import 'package:Resecta/views/helpers/firebase_builders.dart';
 
 class ListRecordPage extends StatelessWidget {
   final String projectId;
@@ -47,7 +47,7 @@ class ListRecordPage extends StatelessWidget {
             // Scaffold wrapper
             return Scaffold(
               appBar: AppBar(
-                title: const Text('Record List'),
+                title: const Text('Entry List'),
                 actions: [
                   Builder(builder: (context) {
                     return IconButton(
@@ -164,7 +164,7 @@ class ListRecordView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      title: Text("Record $recordId"),
+      title: Text("Entry $recordId"),
       subtitle: Text("Added by ${user.name} (${user.email})"),
       trailing:
           Text(timeago.format(record.timestamp.toDate(), locale: "en_short")),

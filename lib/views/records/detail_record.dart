@@ -3,12 +3,12 @@ import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/models/record.dart';
-import 'package:z_collector_app/models/user.dart';
-import 'package:z_collector_app/views/helpers/firebase_builders.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/models/record.dart';
+import 'package:Resecta/models/user.dart';
+import 'package:Resecta/views/helpers/firebase_builders.dart';
 import 'package:timeago/timeago.dart' as timeago;
-import 'package:z_collector_app/views/widgets/tiles/record_field_tile.dart';
+import 'package:Resecta/views/widgets/tiles/record_field_tile.dart';
 
 class DetailRecordPage extends StatelessWidget {
   final String projectId;

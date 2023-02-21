@@ -1,8 +1,8 @@
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/views/helpers/snackbar_messages.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/views/helpers/snackbar_messages.dart';
 
 class RecordFileFieldTile extends StatelessWidget {
   final ProjectField field;

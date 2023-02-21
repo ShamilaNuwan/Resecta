@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:z_collector_app/models/utils/geopoint.dart';
-import 'package:z_collector_app/models/utils/reference.dart';
-import 'package:z_collector_app/models/utils/timestamp.dart';
+import 'package:Resecta/models/utils/geopoint.dart';
+import 'package:Resecta/models/utils/reference.dart';
+import 'package:Resecta/models/utils/timestamp.dart';
 
 part 'record.g.dart';
 

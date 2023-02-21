@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
-import 'package:z_collector_app/models/project.dart';
+import 'package:Resecta/models/project.dart';
 
 class BaseFieldUtils {
   static FormFieldValidator<T>? buildValidators<T>(BuildContext context, ProjectField field) {

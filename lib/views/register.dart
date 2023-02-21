@@ -5,10 +5,10 @@ import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:beamer/beamer.dart';
-import 'package:z_collector_app/models/user.dart';
-import 'package:z_collector_app/providers/progress_provider.dart';
-import 'package:z_collector_app/views/helpers/snackbar_messages.dart';
-import 'package:z_collector_app/views/helpers/progress_overlay.dart';
+import 'package:Resecta/models/user.dart';
+import 'package:Resecta/providers/progress_provider.dart';
+import 'package:Resecta/views/helpers/snackbar_messages.dart';
+import 'package:Resecta/views/helpers/progress_overlay.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -16,14 +16,14 @@ class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Z- Collector Register")),
+      appBar: AppBar(title: const Text("Resecta Register")),
       body: ProgressOverlay(child: RegisterPageForm()),
     );
   }
 }
 
 class RegisterPageForm extends ConsumerWidget {
-  final _registerImage = "https://www.dc10g.com/image/login_des.png";
+  final _registerImage = "https://icon-library.com/images/signup-icon/signup-icon-13.jpg";
   final _formKey = GlobalKey<FormBuilderState>();
 
   RegisterPageForm({Key? key}) : super(key: key);
@@ -101,7 +101,7 @@ class RegisterPageForm extends ConsumerWidget {
                 ),
                 TextButton(
                   onPressed: () => _handleLogin(context),
-                  child: const Text("Already have an account? Login Now"),
+                  child: const Text("Already have an account | Login in here"),
                 ),
               ],
             ),

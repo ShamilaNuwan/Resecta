@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/views/helpers/firebase_builders.dart';
-import 'package:z_collector_app/views/helpers/get_projects.dart';
-import 'package:z_collector_app/views/projects/list_card.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/views/helpers/firebase_builders.dart';
+import 'package:Resecta/views/helpers/get_projects.dart';
+import 'package:Resecta/views/projects/list_card.dart';
 
 class ListMyProjects extends StatelessWidget {
   const ListMyProjects({Key? key}) : super(key: key);

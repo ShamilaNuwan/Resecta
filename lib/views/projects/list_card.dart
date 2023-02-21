@@ -1,7 +1,7 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/views/helpers/color_gen.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/views/helpers/color_gen.dart';
 
 class ProjectListCard extends StatelessWidget {
   final String projectId;

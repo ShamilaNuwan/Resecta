@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/views/helpers/location_fetcher.dart';
-import 'package:z_collector_app/views/helpers/snackbar_messages.dart';
-import 'package:z_collector_app/views/widgets/fields/abstract_field.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/views/helpers/location_fetcher.dart';
+import 'package:Resecta/views/helpers/snackbar_messages.dart';
+import 'package:Resecta/views/widgets/fields/abstract_field.dart';
 
 class LocationFieldWidget extends AbstractFieldWidget {
   const LocationFieldWidget(

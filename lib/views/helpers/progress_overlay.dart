@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:z_collector_app/providers/progress_provider.dart';
+import 'package:Resecta/providers/progress_provider.dart';
 
 class ProgressOverlay extends ConsumerWidget {
   final bool loading;

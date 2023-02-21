@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:z_collector_app/models/project.dart';
+import 'package:Resecta/models/project.dart';
 
 bool isAllowedToAddRecord(
     DocumentReference<Map<String, dynamic>> userRef, Project project) {
