@@ -115,7 +115,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(
             seedColor: Colors.green,
-            secondary: Colors.pink,
+            secondary: Colors.green,
           ),
           useMaterial3: false,
         ),

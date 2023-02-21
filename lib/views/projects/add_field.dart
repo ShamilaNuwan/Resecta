@@ -182,6 +182,7 @@ class _AddFieldState extends State<AddField> {
           children: [
             Expanded(
               child: TextButton(
+                style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color(0xFFECEFF1))),
                 onPressed: () {
                   Navigator.pop(context);
                 },

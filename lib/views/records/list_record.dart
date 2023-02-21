@@ -164,10 +164,22 @@ class ListRecordView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      tileColor: Color(0xFFECEFF1),
+      shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(10),
+                      topRight: Radius.circular(10),
+                      bottomRight: Radius.circular(10),
+                      bottomLeft: Radius.circular(10)
+                  )
+            ),
+      leading: Text(timeago.format(record.timestamp.toDate(), locale: "en_short")),
       title: Text("Entry $recordId"),
       subtitle: Text("Added by ${user.name} (${user.email})"),
-      trailing:
-          Text(timeago.format(record.timestamp.toDate(), locale: "en_short")),
+      trailing:Icon(
+                Icons.chevron_right,
+                color: Theme.of(context).colorScheme.secondary
+      ),     
       onTap: () {
         Beamer.of(context)
             .beamToNamed('/home/project/$projectId/records/$recordId');

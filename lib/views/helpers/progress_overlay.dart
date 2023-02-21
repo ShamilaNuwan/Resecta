@@ -22,7 +22,7 @@ class ProgressOverlay extends ConsumerWidget {
             color: Theme.of(context).scaffoldBackgroundColor.withAlpha(127),
             child: Center(
               child: CircularProgressIndicator(
-                color: Theme.of(context).primaryColor,
+                color: Theme.of(context).colorScheme.primary,
               ),
             ),
           ),

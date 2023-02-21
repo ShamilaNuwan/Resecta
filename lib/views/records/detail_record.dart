@@ -37,7 +37,7 @@ class DetailRecordPage extends StatelessWidget {
             // Scaffold wrapper
             return Scaffold(
               appBar: AppBar(
-                title: const Text('Record Details'),
+                title: const Text('Entry Details'),
               ),
               // Guard for user is owner
               body: FirestoreStreamBuilder(
@@ -92,19 +92,19 @@ class DetailRecordView extends StatelessWidget {
         ListTile(
           leading: const Icon(Icons.card_membership),
           title: Text(recordId),
-          subtitle: const Text("Record ID"),
+          subtitle: const Text("Entry ID"),
         ),
         ListTile(
           leading: const Icon(Icons.account_circle),
           title: Text("${user.name} (${user.email})"),
-          subtitle: const Text("Recorded by"),
+          subtitle: const Text("Added by"),
         ),
         ListTile(
           leading: const Icon(Icons.timer),
           title: Text(
               "${DateFormat('yyyy-MM-dd - kk:mm:ss').format(record.timestamp.toDate())}"
               " ($timeagoMsg)"),
-          subtitle: const Text("Recorded at"),
+          subtitle: const Text("Added at"),
         ),
         const Divider(),
         Expanded(

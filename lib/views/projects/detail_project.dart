@@ -233,7 +233,7 @@ class DetailProjectView extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8),
             child: ElevatedButton(
-              child: const Text("Block Users"),
+              child: const Text("View Users"),
               onPressed: () => Beamer.of(context)
                   .beamToNamed('/home/project/$projectId/blacklisted'),
               style: ElevatedButton.styleFrom(primary: Colors.blueGrey),
