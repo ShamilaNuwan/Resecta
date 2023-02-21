@@ -7,7 +7,7 @@ Future<Uri> getPrivateProjectDynamicLink(String projectId) async {
 
   final DynamicLinkParameters parameters = DynamicLinkParameters(
     // The Dynamic Link URI domain. You can view created URIs on your Firebase console
-    uriPrefix: 'https://zconnectorapp.page.link',
+    uriPrefix: 'https://resecta.page.link',
     // The deep Link passed to your application which you can use to affect change
     link: Uri.parse(
       'https://example.com/privateproject/?id=$projectId',
