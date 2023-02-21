@@ -9,9 +9,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_image_picker/form_builder_image_picker.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/views/projects/add_field.dart';
-import 'package:z_collector_app/views/widgets/fields/record_field.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/views/projects/add_field.dart';
+import 'package:Resecta/views/widgets/fields/record_field.dart';
 
 class AddProjectStepper extends StatefulWidget {
   const AddProjectStepper({Key? key}) : super(key: key);

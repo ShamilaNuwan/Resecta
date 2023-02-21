@@ -4,14 +4,14 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/models/record.dart';
-import 'package:z_collector_app/providers/progress_provider.dart';
-import 'package:z_collector_app/views/helpers/firebase_builders.dart';
-import 'package:z_collector_app/views/helpers/formdata_manager.dart';
-import 'package:z_collector_app/views/helpers/is_allowed.dart';
-import 'package:z_collector_app/views/helpers/snackbar_messages.dart';
-import 'package:z_collector_app/views/widgets/fields/record_field.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/models/record.dart';
+import 'package:Resecta/providers/progress_provider.dart';
+import 'package:Resecta/views/helpers/firebase_builders.dart';
+import 'package:Resecta/views/helpers/formdata_manager.dart';
+import 'package:Resecta/views/helpers/is_allowed.dart';
+import 'package:Resecta/views/helpers/snackbar_messages.dart';
+import 'package:Resecta/views/widgets/fields/record_field.dart';
 
 class AddRecordPage extends StatelessWidget {
   final String projectId;
@@ -25,7 +25,7 @@ class AddRecordPage extends StatelessWidget {
 
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: const Text("Add New Record")),
+        appBar: AppBar(title: const Text("Add New Entry")),
         body: FirestoreFutureBuilder(
           future: projectRef.get(),
           builder: (context, projectData) => AddRecordPageForm(

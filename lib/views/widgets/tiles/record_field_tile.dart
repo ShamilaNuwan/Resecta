@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/views/widgets/tiles/boolean_tile.dart';
-import 'package:z_collector_app/views/widgets/tiles/file_tile.dart';
-import 'package:z_collector_app/views/widgets/tiles/geo_point_tile.dart';
-import 'package:z_collector_app/views/widgets/tiles/multiple_value_tile.dart';
-import 'package:z_collector_app/views/widgets/tiles/table_tile.dart';
-import 'package:z_collector_app/views/widgets/tiles/timestamp_tile.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/views/widgets/tiles/boolean_tile.dart';
+import 'package:Resecta/views/widgets/tiles/file_tile.dart';
+import 'package:Resecta/views/widgets/tiles/geo_point_tile.dart';
+import 'package:Resecta/views/widgets/tiles/multiple_value_tile.dart';
+import 'package:Resecta/views/widgets/tiles/table_tile.dart';
+import 'package:Resecta/views/widgets/tiles/timestamp_tile.dart';
 
 class RecordFieldTile extends StatelessWidget {
   final ProjectField field;

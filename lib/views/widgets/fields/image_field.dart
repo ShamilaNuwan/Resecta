@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:form_builder_image_picker/form_builder_image_picker.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/views/widgets/fields/abstract_field.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/views/widgets/fields/abstract_field.dart';
 
 class ImageFieldWidget extends AbstractFieldWidget {
   const ImageFieldWidget(

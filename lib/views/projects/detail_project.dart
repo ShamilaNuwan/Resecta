@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_share/flutter_share.dart';
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/style.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/models/user.dart';
-import 'package:z_collector_app/views/helpers/dynamic_links.dart';
-import 'package:z_collector_app/views/helpers/firebase_builders.dart';
-import 'package:z_collector_app/views/helpers/is_allowed.dart';
-import 'package:z_collector_app/views/widgets/storage_image.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/models/user.dart';
+import 'package:Resecta/views/helpers/dynamic_links.dart';
+import 'package:Resecta/views/helpers/firebase_builders.dart';
+import 'package:Resecta/views/helpers/is_allowed.dart';
+import 'package:Resecta/views/widgets/storage_image.dart';
 
 class DetailProjectPage extends StatelessWidget {
   final String projectId;
@@ -54,7 +54,7 @@ class DetailProjectPage extends StatelessWidget {
                       Beamer.of(context)
                           .beamToNamed('/home/project/$projectId/record/add');
                     },
-                    label: const Text("Add Record"),
+                    label: const Text("Add Entry"),
                     icon: const Icon(Icons.add),
                   )
                 : null,
@@ -174,18 +174,18 @@ class DetailProjectView extends StatelessWidget {
         ),
         ListTile(
           title: Text(owner.name),
-          subtitle: const Text('Project Owner'),
+          subtitle: const Text('Owner'),
           leading: const Icon(Icons.shield),
         ),
         ListTile(
           title: Text(project.isPrivate ? 'Private' : 'Public'),
-          subtitle: const Text('Project Visibility'),
+          subtitle: const Text('Visibility'),
           leading: const Icon(Icons.visibility),
         ),
         if (isOwner)
           ListTile(
             title: Text(project.isPublished ? 'Published' : 'Draft'),
-            subtitle: const Text('Project Status'),
+            subtitle: const Text('Status'),
             leading: const Icon(Icons.public),
           ),
         const Divider(),
@@ -197,7 +197,7 @@ class DetailProjectView extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8),
             child: ElevatedButton(
-              child: const Text("Show All Records"),
+              child: const Text("View All Entries"),
               onPressed: () {
                 Beamer.of(context)
                     .beamToNamed('/home/project/$projectId/records');
@@ -233,7 +233,7 @@ class DetailProjectView extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8),
             child: ElevatedButton(
-              child: const Text("Blacklist/Allow Users"),
+              child: const Text("Block Users"),
               onPressed: () => Beamer.of(context)
                   .beamToNamed('/home/project/$projectId/blacklisted'),
               style: ElevatedButton.styleFrom(primary: Colors.blueGrey),

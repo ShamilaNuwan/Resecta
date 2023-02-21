@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:z_collector_app/views/helpers/progress_overlay.dart';
+import 'package:Resecta/views/helpers/progress_overlay.dart';
 
 typedef OnDataWidgetBuilder<T> = Widget Function(BuildContext context, T data);
 

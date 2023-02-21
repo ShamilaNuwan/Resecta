@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:z_collector_app/models/project.dart';
+import 'package:Resecta/models/project.dart';
 
 class RecordGeoPointFieldTile extends StatelessWidget {
   final ProjectField field;

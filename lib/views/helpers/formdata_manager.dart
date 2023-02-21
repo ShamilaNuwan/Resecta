@@ -4,8 +4,8 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:form_builder_file_picker/form_builder_file_picker.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:uuid/uuid.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/views/helpers/background_upload.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/views/helpers/background_upload.dart';
 
 class FormDataManager {
   final String projectId;

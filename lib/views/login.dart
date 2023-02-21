@@ -4,9 +4,9 @@ import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:beamer/beamer.dart';
-import 'package:z_collector_app/providers/progress_provider.dart';
-import 'package:z_collector_app/views/helpers/snackbar_messages.dart';
-import 'package:z_collector_app/views/helpers/progress_overlay.dart';
+import 'package:Resecta/providers/progress_provider.dart';
+import 'package:Resecta/views/helpers/snackbar_messages.dart';
+import 'package:Resecta/views/helpers/progress_overlay.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -14,7 +14,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Z- Collector Login")),
+      appBar: AppBar(title: const Text("Resecta Login")),
       body: ProgressOverlay(child: LoginPageForm()),
     );
   }
@@ -22,7 +22,7 @@ class LoginPage extends StatelessWidget {
 
 class LoginPageForm extends ConsumerWidget {
   final _loginImage =
-      "https://imgs.bharatmatrimony.com/bmimgs/login/login-otp-banner.png";
+      "https://ecurater.com/wp-content/uploads/2020/10/login1.png";
   final _formKey = GlobalKey<FormBuilderState>();
 
   LoginPageForm({Key? key}) : super(key: key);
@@ -78,7 +78,7 @@ class LoginPageForm extends ConsumerWidget {
                 ),
                 TextButton(
                   onPressed: () => _handleRegister(context),
-                  child: const Text("Don't have an account? Register Now"),
+                  child: const Text("Don't have an account | Register in here"),
                 ),
               ],
             ),

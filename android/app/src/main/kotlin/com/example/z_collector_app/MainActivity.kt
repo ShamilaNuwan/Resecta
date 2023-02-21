@@ -1,4 +1,4 @@
-package com.example.z_collector_app
+package com.example.Resecta
 
 import android.content.Context
 import io.flutter.embedding.android.FlutterActivity
@@ -12,7 +12,7 @@ import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
 
 class MainActivity : FlutterActivity(), SensorEventListener {
-    private val methodChannelName: String = "com.example.z_collector_app/methodChannel"
+    private val methodChannelName: String = "com.example.Resecta/methodChannel"
     private val supportedSensors: List<Int> = listOf(
             // Motion sensors
             Sensor.TYPE_ACCELEROMETER, // [Gx, Gy, Gz] each in m/s-2

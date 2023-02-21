@@ -4,19 +4,19 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:form_builder_validators/localization/l10n.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:z_collector_app/views/helpers/background_upload.dart';
-import 'package:z_collector_app/views/helpers/dynamic_links.dart';
-import 'package:z_collector_app/views/home/home.dart';
-import 'package:z_collector_app/views/login.dart';
-import 'package:z_collector_app/views/projects/add_project.dart';
-import 'package:z_collector_app/views/projects/detail_project.dart';
-import 'package:z_collector_app/views/projects/list_blacklisted.dart';
-import 'package:z_collector_app/views/projects/lists.dart';
-import 'package:z_collector_app/views/records/add_record.dart';
-import 'package:z_collector_app/views/records/detail_record.dart';
-import 'package:z_collector_app/views/records/list_record.dart';
-import 'package:z_collector_app/views/records/list_upload_tasks.dart';
-import 'package:z_collector_app/views/register.dart';
+import 'package:Resecta/views/helpers/background_upload.dart';
+import 'package:Resecta/views/helpers/dynamic_links.dart';
+import 'package:Resecta/views/home/home.dart';
+import 'package:Resecta/views/login.dart';
+import 'package:Resecta/views/projects/add_project.dart';
+import 'package:Resecta/views/projects/detail_project.dart';
+import 'package:Resecta/views/projects/list_blacklisted.dart';
+import 'package:Resecta/views/projects/lists.dart';
+import 'package:Resecta/views/records/add_record.dart';
+import 'package:Resecta/views/records/detail_record.dart';
+import 'package:Resecta/views/records/list_record.dart';
+import 'package:Resecta/views/records/list_upload_tasks.dart';
+import 'package:Resecta/views/register.dart';
 
 import 'firebase_options.dart';
 
@@ -111,11 +111,11 @@ class MyApp extends StatelessWidget {
         localizationsDelegates: const [
           FormBuilderLocalizations.delegate,
         ],
-        title: 'Z-Collector',
+        title: 'Resecta',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(
-            seedColor: Colors.blue,
-            secondary: Colors.red,
+            seedColor: Colors.green,
+            secondary: Colors.pink,
           ),
           useMaterial3: false,
         ),

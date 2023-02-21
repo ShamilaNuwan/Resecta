@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/views/widgets/fields/base_field_utils.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/views/widgets/fields/base_field_utils.dart';
 
 abstract class AbstractFieldWidget extends StatelessWidget {
   final int index;

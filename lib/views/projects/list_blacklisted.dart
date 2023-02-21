@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/models/user.dart';
-import 'package:z_collector_app/views/helpers/firebase_builders.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/models/user.dart';
+import 'package:Resecta/views/helpers/firebase_builders.dart';
 
 class BlacklistedUserListPage extends StatelessWidget {
   final String projectId;
@@ -15,7 +15,7 @@ class BlacklistedUserListPage extends StatelessWidget {
     // Get current user
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Blacklist User'),
+        title: const Text('Blocked User'),
       ),
       body: FirebaseUserStreamBuilder(
         builder: (context, currentUserId) {

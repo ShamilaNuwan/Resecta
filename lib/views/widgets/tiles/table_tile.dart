@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:z_collector_app/models/project.dart';
+import 'package:Resecta/models/project.dart';
 
 class RecordTableFieldTile extends StatelessWidget {
   final ProjectField field;

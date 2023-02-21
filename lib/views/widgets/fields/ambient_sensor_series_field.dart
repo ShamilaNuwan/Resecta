@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:z_collector_app/models/project.dart';
-import 'package:z_collector_app/providers/sensor_provider.dart';
-import 'package:z_collector_app/views/widgets/fields/abstract_series_field.dart';
+import 'package:Resecta/models/project.dart';
+import 'package:Resecta/providers/sensor_provider.dart';
+import 'package:Resecta/views/widgets/fields/abstract_series_field.dart';
 
 class AmbientSensorSeriesFieldWidget
     extends AbstractSeriesFieldWidget<AmbientSensorData> {

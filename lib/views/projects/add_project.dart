@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:z_collector_app/views/projects/add_project_stepper.dart';
+import 'package:Resecta/views/projects/add_project_stepper.dart';
 
 class AddProjectPage extends StatelessWidget {
   const AddProjectPage({Key? key}) : super(key: key);
@@ -7,7 +7,7 @@ class AddProjectPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Add New Project")),
+      appBar: AppBar(title: const Text("Create New Project")),
       body: const AddProjectStepper(),
     );
   }

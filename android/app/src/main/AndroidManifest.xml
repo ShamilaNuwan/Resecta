@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.z_collector_app">
+    package="com.example.Resecta">
    <application
-        android:label="z_collector_app"
+        android:label="Resecta"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
