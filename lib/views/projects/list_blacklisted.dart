@@ -15,7 +15,7 @@ class BlacklistedUserListPage extends StatelessWidget {
     // Get current user
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Blocked User'),
+        title: const Text('Users'),
       ),
       body: FirebaseUserStreamBuilder(
         builder: (context, currentUserId) {
@@ -42,13 +42,22 @@ class BlacklistedUserListPage extends StatelessWidget {
                           project.blacklistedUsers.contains(allowedUserDocRef);
 
                       return ListTile(
+                        tileColor: Color(0xFFECEFF1),
+                        shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(10),
+                                        topRight: Radius.circular(10),
+                                        bottomRight: Radius.circular(10),
+                                        bottomLeft: Radius.circular(10)
+                                    )
+                              ),
                         title:
                             Text("${allowedUser.name} (${allowedUser.email})"),
                         subtitle: isBlacklisted
                             ? const Text("Blacklisted")
                             : const Text("Allowed"),
                         trailing: Icon(
-                          Icons.chevron_right,
+                          isBlacklisted ? Icons.person_add: Icons.block,
                           color: Theme.of(context).colorScheme.primary,
                         ),
                         onTap: () async {

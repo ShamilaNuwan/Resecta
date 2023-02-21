@@ -36,8 +36,8 @@ class ProjectListCard extends StatelessWidget {
           children: [
             Container(
               margin: const EdgeInsets.only(right: 16),
-              width: 40,
-              height: 40,
+              width: 50,
+              height: 50,
               child: Center(
                 child: Text(
                   project.name[0],

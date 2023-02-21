@@ -22,16 +22,8 @@ class HomePage extends StatelessWidget {
           children: [
             DrawerHeader(
               child: Center(
-                child: Text(
-                  "Resecta",
-                  style: Theme.of(context)
-                      .textTheme
-                      .headline4!
-                      .apply(fontWeightDelta: 2, color: Colors.white),
-                ),
+                child: Image.network("https://www.linkpicture.com/q/Picture1-removebg-preview_1.png"),
               ),
-              decoration:
-                  BoxDecoration(color: Theme.of(context).colorScheme.primary),
             ),
             ListTile(
               title: const Text("My Projects"),

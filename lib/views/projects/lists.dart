@@ -63,7 +63,7 @@ class ListProjects extends StatelessWidget {
         child: FirestoreQueryStreamBuilder(
           emptyWidget: const Padding(
             padding: EdgeInsets.all(8),
-            child: Text("Nothing to show."),
+            child: Text("No Projects to show"),
           ),
           stream: query.snapshots(),
           builder: (context, projectId, projectMap) {

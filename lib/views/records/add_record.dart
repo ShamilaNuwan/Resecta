@@ -77,7 +77,7 @@ class AddRecordPageForm extends ConsumerWidget {
                   child: const Text("Cancel"),
                   style: ButtonStyle(
                     backgroundColor:
-                        MaterialStateProperty.all(Theme.of(context).errorColor),
+                        MaterialStateProperty.all(Color(0xFFCFD8DC)),
                   ),
                 ),
                 const SizedBox(width: 8),

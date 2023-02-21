@@ -16,14 +16,14 @@ class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Resecta Register")),
+      appBar: AppBar(title: const Text("Resecta")),
       body: ProgressOverlay(child: RegisterPageForm()),
     );
   }
 }
 
 class RegisterPageForm extends ConsumerWidget {
-  final _registerImage = "https://icon-library.com/images/signup-icon/signup-icon-13.jpg";
+  // final _registerImage = "https://www.linkpicture.com/view.php?img=LPic63f5130bdc78a1949337555";
   final _formKey = GlobalKey<FormBuilderState>();
 
   RegisterPageForm({Key? key}) : super(key: key);
@@ -38,7 +38,14 @@ class RegisterPageForm extends ConsumerWidget {
             child: ListView(
               padding: const EdgeInsets.all(8),
               children: [
-                Image.network(_registerImage),
+                // Image.network(_registerImage),
+                const Text(
+                  'Register',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25
+                  )
+                ),
                 const SizedBox(height: 8),
                 FormBuilderTextField(
                   name: 'name',
@@ -89,7 +96,7 @@ class RegisterPageForm extends ConsumerWidget {
               ],
             ),
           ),
-          const Divider(),
+          // const Divider(),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
@@ -97,11 +104,11 @@ class RegisterPageForm extends ConsumerWidget {
               children: [
                 ElevatedButton(
                   onPressed: () => _handleSubmit(context, ref),
-                  child: const Text("Submit"),
+                  child: const Text("Register"),
                 ),
                 TextButton(
                   onPressed: () => _handleLogin(context),
-                  child: const Text("Already have an account | Login in here"),
+                  child: const Text("Already have an account? Login"),
                 ),
               ],
             ),
