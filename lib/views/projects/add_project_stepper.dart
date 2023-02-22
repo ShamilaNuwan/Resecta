@@ -319,26 +319,7 @@ class _StepThreeState extends State<_StepThree> {
               setState(() => {_isPrivate = val == true})
             },
           ),
-          const SizedBox(height: 8),
-          _isPrivate
-              ? Column(children: [
-                  FormBuilderTextField(
-                    name: 'entryCode',
-                    decoration: const InputDecoration(
-                      label: Text('Entry Code'),
-                      border: OutlineInputBorder(),
-                    ),
-                    validator: FormBuilderValidators.compose(
-                      [
-                        FormBuilderValidators.required(context),
-                        FormBuilderValidators.maxLength(context, 5),
-                        FormBuilderValidators.minLength(context, 5),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 8)
-                ])
-              : const SizedBox(),
+          const SizedBox(height: 8)
         ],
       ),
     );
